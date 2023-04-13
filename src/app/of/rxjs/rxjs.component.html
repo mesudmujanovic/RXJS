@@ -1,0 +1,27 @@
+<div *ngIf="data$ | async as data">
+
+    <div *ngFor="let user of data.users">
+        {{user.id}}
+    </div>
+    ----------
+    <div *ngFor="let username of data.userName">
+        {{username}}
+    </div>
+    ---------
+    <div *ngFor="let filter of data.userFliter">
+        {{filter.isActive}}
+    </div>
+    ------
+</div>
+
+<!-- <div *ngFor="let users of user$ |async" >
+    <h2>{{users.name}}</h2>
+</div> -->
+
+<!-- <div *ngFor="let username of userName$ |async">
+    {{username}}
+</div> -->
+
+<!-- <div *ngFor="let isActive of userFilter$ |async">
+    {{isActive.name}}
+</div> -->
